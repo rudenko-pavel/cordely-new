@@ -1,0 +1,84 @@
+
+  <div ng-if="home.promise.$$state.status != 1">
+    <pre-loader></pre-loader>
+  </div>
+  <div  ng-if="home.promise.$$state.status == 1">
+    <div class="topImg">
+      <img src="assets/images/bg/bg_01.jpg" />
+    </div>
+    
+    <!--==========================
+      Home Section
+    ============================-->
+    <section id="home-about">
+
+      <div class="home-about-row section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-6">
+              <div class="wow fadeInLeft">
+                <h2>{{home.pa_07 | translate}}</h2>
+                <h3>{{home.pa_02 | translate}}</h3>
+               </div>
+            </div>
+            <div class="col-6 col-md-6">
+                <img class="home-about-img-right wow fadeInRight" src="../assets/images/img/home-about-11.jpg" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-about-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-6">
+              <img class="home-about-img-left  wow fadeInLeft" src="../assets/images/img/home-about-12.jpg" alt="">
+            </div>
+            <div class="col-6 col-md-6 content">
+              <div class="wow fadeInRight">
+                <h2>{{home.pa_06 | translate}}</h2>
+                <h3>{{home.pa_08 | translate}}</h3>
+                <h3>{{home.pa_081 | translate}}</h3>
+                <ul>
+                  <li ng-repeat="item in home.list01"><i class="ion-android-checkmark-circle"></i>{{item.txt | translate}}</li>
+                </ul>
+                <h3>{{home.pa_082 | translate}}</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-about-row section-bg">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-6">
+                <div class="wow fadeInLeft">
+                  <h2>{{home.pa_03 | translate}}</h2>
+                  <h3>{{home.pa_04 | translate}}</h3>
+                 </div>
+              </div>
+              <div class="col-6 col-md-6">
+                  <img class="home-about-img-right wow fadeInRight" src="../assets/images/img/home-about-13.jpg" alt="">
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-about-row">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-md-6">
+                  <img class="home-about-img-left  wow fadeInLeft" src="../assets/images/img/home-about-14.jpg" alt="">
+                </div>
+                <div class="col-6 col-md-6 content">
+                  <div class="wow fadeInRight">
+                    <h2>{{home.pa_05 | translate}}</h2>
+                    <h3>{{home.pa_09 | translate}}</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section><!-- #home-about -->
+  </div>

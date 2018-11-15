@@ -1,0 +1,17 @@
+{
+    "title"    : "SERVICES",
+    "auto_01"  : "CARRIAGES_BLOCK_01",
+    "auto_02"  : "CARRIAGES_AUTO_02",
+    "auto_021" : "CARRIAGES_AUTO_021",
+    "auto_022" : "CARRIAGES_AUTO_022",
+    "auto_023" : "CARRIAGES_AUTO_023",
+    "auto_024" : "CARRIAGES_AUTO_024",
+    "auto_03"  : "CARRIAGES_AUTO_03",
+    "auto_04"  : "CARRIAGES_AUTO_04",
+    "auto_05"  : "CARRIAGES_AUTO_05",
+    "list01"   :[
+      {"id":1 , "txt":  "CARRIAGES_AUTO_ITEM_01", "page":"auto"},
+      {"id":2 , "txt":  "CARRIAGES_AUTO_ITEM_02", "page":"auto"},
+      {"id":3 , "txt":  "CARRIAGES_AUTO_ITEM_03", "page":"auto"}
+    ]
+}

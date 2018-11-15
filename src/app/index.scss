@@ -1,0 +1,196 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+ $navbar-inverse-link-color: #5AADBB;
+ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+ /**
+  *  Do not remove the comments below. It's the markers used by wiredep to inject
+  *  sass dependencies when defined in the bower.json of your dependencies
+  */
+ // bower:scss
+ // endbower
+ @font-face {
+  font-family: 'Comfortaa-Light';
+  src: url('../assets/fonts/comfortaa/Comfortaa-Light.ttf');
+ }
+
+ @font-face {
+  font-family: 'Comfortaa-Regular';
+  src: url('../assets/fonts/comfortaa/Comfortaa-Regular.ttf');
+ }
+
+ @font-face {
+  font-family: 'Comfortaa-Bold';
+  src: url('../assets/fonts/comfortaa/Comfortaa-Bold.ttf');
+ }
+
+
+ @font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../assets/fonts/roboto/Roboto-Regular.ttf');
+ }
+
+ @font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../assets/fonts/roboto/Roboto-Bold.ttf');
+ }
+
+ @font-face {
+  font-family: 'Oswald-Bold';
+  src: url('../assets/fonts/oswald/Oswald-Bold.ttf');
+ }
+
+ @font-face {
+  font-family: 'Oswald-Medium';
+  src: url('../assets/fonts/oswald/Oswald-Medium.ttf');
+ }
+
+ @font-face {
+  font-family: 'Oswald-Regular';
+  src: url('../assets/fonts/oswald/Oswald-Regular.ttf');
+ }
+
+ @font-face {
+  font-family: 'Oswald-Light';
+  src: url('../assets/fonts/oswald/Oswald-Light.ttf');
+ }
+
+ @font-face {
+  font-family: 'Oswald-ExtraLight';
+  src: url('../assets/fonts/oswald/Oswald-ExtraLight.ttf');
+ }
+
+ @font-face {
+  font-family: 'uicarousel';
+  src: url("../assets/fonts/uicarousel/ui-carousel.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../assets/fonts/awesome/font-awesome-webfont.ttf');
+ }
+
+ @font-face {
+  font-family: 'MaterialIcons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/material/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('MaterialIcons'),
+    local('MaterialIcons-Regular'),
+    url('../assets/fonts/material/MaterialIcons-Regular.woff2') format('woff2'),
+    url('../assets/fonts/material/MaterialIcons-Regular.woff') format('woff'),
+    url('../assets/fonts/material/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ionicons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/ionicons/ionicons.eot'); /* For IE6-8 */
+  src: local('ionicons'),
+    local('ionicons'),
+    url('../assets/fonts/ionicons/ionicons.svg') format('woff2'),
+    url('../assets/fonts/ionicons/ionicons.woff') format('woff'),
+    url('../assets/fonts/ionicons/ionicons.ttf') format('truetype');
+}
+
+html, body{
+  font-family: 'Comfortaa-Regular', sans-serif !important;
+   height: 100%;
+   max-height: 100%;
+   font-size: 14px;
+ }
+
+ h2,h3{
+  font-family: 'Comfortaa-Regular', sans-serif !important;
+ }
+ /**
+  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+  *  all your sass files automatically
+  */
+ // injector
+ // endinjector
+ @media only screen and (max-device-width:991px)   {
+  .section-bg.topPart .capt h2 {
+    font-size: 48px;
+    text-align: left;
+    padding: 55px 62px 0px;
+    width: 100%;
+  }
+
+  .md-tooltip {
+    height: 250px !important;
+    width: 375px !important;
+  }
+
+ }
+
+  @media only screen and (max-device-width:768px)   {
+
+  html, body, .hundred, .btn{
+     font-size: 12px;
+   }
+
+  .container.commonUl .labelClass, .colorRed {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+   .btn{padding:4px 8px;}
+
+   .bigImg img {
+      width: 100%;
+      left: 0;
+      margin: 0px;
+      top: 20px;
+  }
+
+  .block-services {
+    padding: 14px 10px 15px;
+  }
+  .block-services__title {
+    margin-bottom: 10px;
+  }
+
+  .block-services__description {
+    height: auto;
+  }
+
+   .arrowup .btn{
+   left: -15px;
+   position: relative;
+  }
+
+  .decor-1 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 320px;
+    padding: 5px;
+  }
+
+  .decor-1:after, .decor-1:before {
+    display: none;
+  }
+
+  .decor-1 span{
+    font-size: 14px;
+  }
+
+  .section-bg.topPart .capt h2 {
+    font-size: 24px;
+    text-align: left;
+    padding: 55px 22px 0px;
+    width: 100%;
+  }
+
+  .section-bg.topPart {
+    height: 170px;
+    margin-bottom: 20px;
+  }
+
+
+}

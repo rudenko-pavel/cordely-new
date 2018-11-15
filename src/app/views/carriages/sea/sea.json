@@ -1,0 +1,14 @@
+{
+    "title"     : "SERVICES",
+    "sea_01"    : "CARRIAGES_BLOCK_04",
+    "sea_02"    : "CARRIAGES_SEA_02",
+    "sea_03"    : "CARRIAGES_SEA_03",
+    "sea_04"    : "CARRIAGES_SEA_04",
+    "sea_05"    : "CARRIAGES_SEA_05",
+    "list01"    :[
+      {"id":1 , "txt":  "CARRIAGES_SEA_ITEM_01", "page":"sea"},
+      {"id":2 , "txt":  "CARRIAGES_SEA_ITEM_02", "page":"sea"},
+      {"id":3 , "txt":  "CARRIAGES_SEA_ITEM_03", "page":"sea"},
+      {"id":4 , "txt":  "CARRIAGES_SEA_ITEM_04", "page":"sea"}
+    ]
+}

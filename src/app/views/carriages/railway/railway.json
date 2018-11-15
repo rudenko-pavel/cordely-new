@@ -1,0 +1,16 @@
+{
+    "title"         : "SERVICES",
+    "railway_01"    : "CARRIAGES_BLOCK_02",
+    "railway_02"    : "CARRIAGES_RAILWAY_02",
+    "railway_021"   : "CARRIAGES_RAILWAY_021",
+    "railway_03"    : "CARRIAGES_RAILWAY_03",
+    "railway_04"    : "CARRIAGES_RAILWAY_04",
+    "railway_05"    : "CARRIAGES_RAILWAY_05",
+    "list01"    :[
+      {"id":1 , "txt":  "CARRIAGES_RAILWAY_ITEM_01", "page":"railway"},
+      {"id":2 , "txt":  "CARRIAGES_RAILWAY_ITEM_02", "page":"railway"},
+      {"id":3 , "txt":  "CARRIAGES_RAILWAY_ITEM_03", "page":"railway"},
+      {"id":4 , "txt":  "CARRIAGES_RAILWAY_ITEM_04", "page":"railway"},
+      {"id":5 , "txt":  "CARRIAGES_RAILWAY_ITEM_05", "page":"railway"}
+    ]
+}

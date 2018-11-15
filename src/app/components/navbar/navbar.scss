@@ -1,0 +1,139 @@
+.md-fab.en, .md-fab option[value="en"]{background: url('../assets/images/languages/en.png') no-repeat #ddd;background-size: contain;}
+.md-fab.ru, .md-fab option[value="ru"]{background: url('../assets/images/languages/ru.png') no-repeat #ddd;background-size: contain;}
+
+/* basic color: #709c83*/
+.fabPanel{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 5005;
+}
+
+.fabPanel, .fabPanel:hover{
+  opacity: 1 !important;
+}
+
+.md-button.md-fab{
+  width: 36px !important;
+  height: 36px !important;
+}
+
+.logo {
+  width: 192px;
+  max-height: 100%;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  height: 100%;
+}
+
+.company-name{
+  width: 192px;
+  max-height: 100%;
+  position: absolute;
+  right: 60px;
+  top: 0px;
+  height: 100%;
+}
+
+.company-name img{
+  position: absolute;
+  right: 0px;
+  max-height: 100%;
+}
+
+.logo img{
+  max-height: 100%;
+  position: relative;
+  height: 100%;
+}
+
+
+@media only screen and (max-device-width:991px)   {
+
+  .md-button.md-fab {
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+    min-height: 24px !important;
+  }
+
+  .menu-link{
+    display: block;
+  }
+
+  .menu-link:hover{
+    color: #555;
+  }
+
+  .navbar {
+    min-height: 0px;
+  }
+
+  .row .info-box, .row .info-box>div {
+    padding: 1px;
+    /*margin-top: 20px;*/
+ }
+
+ .pImg p img {
+  max-width: 50%;
+  max-height: 100%;
+}
+
+.rightImg, .leftImg {
+  margin: 7px 10px;
+}
+
+.section-bg h2,.section-bg .h2 {
+  font-size: 24px;
+}
+
+.pImg h4, .pImg .h4 {
+  font-size: 16px;
+}
+
+.goldTxt {
+  font-size: 14px;
+}
+
+.container.commonUl {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 5px 1px;
+}
+
+.container.commonUl > div > div{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ .info-box h1 {
+    font-size: 24px;
+  }
+
+  .info-box .caption {
+    padding-top: 5px;
+  }
+
+  .decor-1 {
+    margin-top: 12px;
+    margin-bottom: 22px;
+  }
+
+  .section-bg {
+    height: 100px;
+  }
+
+  .capt h2 {
+    padding: 35px 12px 0px;
+    width: 100%;
+  }
+
+ .wrapper-menu.info-box {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+
+}

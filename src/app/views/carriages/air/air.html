@@ -1,0 +1,33 @@
+<div ng-if="air.promise.$$state.status != 1">
+    <pre-loader></pre-loader>
+  </div>
+  
+  <div ng-if="air.promise.$$state.status == 1">
+    <div class="topImg">
+      <img src="assets/images/bg/bg_05.jpg" />
+    </div>
+    
+    <!--==========================
+      air Section
+    ============================-->
+    <section id="air">
+      <div class="air-row section-bg">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">{{air.air_01 | translate}}</h2>
+            <span class="section-divider"></span>
+          </div>
+          <div class="row">
+            <div class="col-6 col-md-6">
+              <div class="wow fadeInLeft">
+                <p>{{air.air_02 | translate}}</p>
+               </div>
+            </div>
+            <div class="col-6 col-md-6">
+                <img class="air-img-right wow fadeInRight" src="../assets/images/img/air-11.jpg" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>

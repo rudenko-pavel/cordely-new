@@ -1,0 +1,11 @@
+{
+    "title"    : "PS_BLOCK_02",
+    "list01"    :[
+        {"id":1 , "txt":  "CONSULTATIONS_ITEM_01", "page":"consultations"},
+        {"id":2 , "txt":  "CONSULTATIONS_ITEM_02", "page":"consultations"},
+        {"id":3 , "txt":  "CONSULTATIONS_ITEM_03", "page":"consultations"},
+        {"id":4 , "txt":  "CONSULTATIONS_ITEM_04", "page":"consultations"},
+        {"id":5 , "txt":  "CONSULTATIONS_ITEM_05", "page":"consultations"},
+        {"id":6 , "txt":  "CONSULTATIONS_ITEM_06", "page":"consultations"}
+    ]
+}

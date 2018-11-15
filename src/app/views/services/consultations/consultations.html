@@ -1,0 +1,52 @@
+<div class="container-fluid info-box">
+  <div ng-if="consultations.promise.$$state.status != 1">
+    <pre-loader></pre-loader>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 " ng-if="consultations.promise.$$state.status == 1">
+    <div class="caption">
+      <section class="section-bg topPart"  ng-mouseover="consultations.topAnimate=2" ng-mouseleave="consultations.topAnimate=1">
+        <div class="capt parallax-bg parallax-primary">
+          <h2 class="animated " ng-class="consultations.topAnimate==1 ? 'lightSpeedIn':''" >{{consultations.title | translate}}<div class="decor-2"></div></h2>
+          <ul class="bg-slideshow">
+              <li>
+                  <div id="consultationsImg01" class="bg-slide"></div>
+              </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <div class="commomText">
+        <div class="pImg">
+          <table>
+            <tr><td>
+            <table class="table table-hover">
+              <tbody>
+                <tr ng-repeat="item in consultations.list01">
+                  
+                  <td>
+                    <md-tooltip md-direction="top">a<img ng-src="../assets/images/tooltip/{{item.page}}_{{item.id}}.jpg" /></md-tooltip>
+                    <span class="decor-2"></span>
+                    <span>{{item.txt | translate}}</span>     
+                  </td>
+                  </md-button>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+            <td>
+            <p><img src="../assets/images/pages/consultation_01.jpg" class="rightImg" ng-click="tog_01=1" /></p>
+          </td></tr>
+          </table>
+
+          <div class="bigImg" ng-class='{"bigImgView":tog_01==1}' ng-click="tog_01=0">
+              <img src="../assets/images/pages/consultation_01.jpg" />
+              <div></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

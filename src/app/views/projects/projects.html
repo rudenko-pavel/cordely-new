@@ -1,0 +1,19 @@
+<div class="container-fluid info-box">
+  <div ng-if="projects.promise.$$state.status != 1">
+    <pre-loader></pre-loader>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 " ng-if="projects.promise.$$state.status == 1">
+    <div class="caption">
+      <section class="section-bg topPart"  ng-mouseover="projects.topAnimate=2" ng-mouseleave="projects.topAnimate=1">
+        <div class="capt parallax-bg parallax-primary">
+          <h2 class="animated " ng-class="projects.topAnimate==1 ? 'lightSpeedIn':''" >{{projects.title | translate}}<div class="decor-2"></div></h2>
+          <ul class="bg-slideshow">
+              <li>
+                  <div id="projectsImg01" class="bg-slide"></div>
+              </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

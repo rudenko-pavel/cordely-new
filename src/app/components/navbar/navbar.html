@@ -1,0 +1,29 @@
+<header id="header">
+  <div class="container">
+      <div class="logo"><a ui-sref="home" class="scrollto"><img src="../assets/images/logo.png"></a></div>
+
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li ng-repeat="item in navbar.itemsInTopMenu" class="dropdownMenu"
+          ng-show="item.isView == true"
+          ng-class='{"menu-has-children":item.cid == true}'>
+          <a  ui-sref-active="active" ng-click="navbar.mobileMenu()" 
+              ng-mouseover="tog=item.id"  ng-mouseleave="tog=0" ng-click="tog=0"
+              ui-sref="{{item.uisref}}">{{item.name| translate |uppercase}}
+            <span class="caret" ng-show="item.cid == true"></span>  
+          </a>
+          <ul ng-show="item.cid == true" 
+                ng-mouseover="tog=item.id"
+                ng-mouseleave="tog=0" ng-click="tog=0"
+                ng-class='{"over":tog==item.id}' >
+            <li ng-repeat="itemDrop in navbar.itemsDropdownMenu | filter :{pid : item.id}">
+              <a  ui-sref-active="active dropdown" 
+                ui-sref="{{itemDrop.uisref}}" ng-click="navbar.mobileMenu()">
+              {{itemDrop.name| translate |uppercase}}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav><!-- #nav-menu-container -->    
+  </div>
+</header><!-- #header -->

@@ -1,0 +1,15 @@
+{
+    "title"     : "SERVICES",
+    "air_01"    : "CARRIAGES_BLOCK_03",
+    "air_02"    : "CARRIAGES_AIR_02",
+    "air_03"    : "CARRIAGES_AIR_03",
+    "air_04"    : "CARRIAGES_AIR_04",
+    "air_05"    : "CARRIAGES_AIR_05",
+    "list01"    :[
+      {"id":1 , "txt":  "CARRIAGES_AIR_ITEM_01", "page":"air"},
+      {"id":2 , "txt":  "CARRIAGES_AIR_ITEM_02", "page":"air"},
+      {"id":3 , "txt":  "CARRIAGES_AIR_ITEM_03", "page":"air"},
+      {"id":4 , "txt":  "CARRIAGES_AIR_ITEM_04", "page":"air"},
+      {"id":5 , "txt":  "CARRIAGES_AIR_ITEM_05", "page":"air"}
+    ]
+}

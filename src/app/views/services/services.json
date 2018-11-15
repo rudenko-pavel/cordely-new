@@ -1,0 +1,14 @@
+{
+    "list02" : [
+        {"id":1 , "name":"PS_BLOCK_01",  "description":"PS_BLOCK_01_descr", "link":"/#/services/customs"},
+        {"id":2 , "name":"PS_BLOCK_02",  "description":"PS_BLOCK_02_descr", "link":"/#/services/consultations"},
+        {"id":3 , "name":"PS_BLOCK_03",  "description":"PS_BLOCK_03_descr", "link":"/#/services/logistics"},
+        {"id":4 , "name":"PS_BLOCK_05",  "description":"PS_BLOCK_05_descr", "link":"/#/services/doortodoor"},
+        {"id":5 , "name":"PS_BLOCK_07",  "description":"PS_BLOCK_07_descr", "link":"/#/services/privateclients"}
+      ],
+      "title"        : "SERVICES",
+      "ps_01"        :  "PS_01",
+      "ps_02"        :  "PS_02",
+      "ps_03"        :  "PS_03",
+      "read"         :  "READ_MORE"
+}

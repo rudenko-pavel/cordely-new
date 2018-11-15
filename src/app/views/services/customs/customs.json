@@ -1,0 +1,19 @@
+{
+    "title"    : "PS_BLOCK_01",
+    "custom_01"    : "CUSTOM_01",
+    "custom_02"    : "CUSTOM_02",
+    "custom_03"    : "CUSTOM_03",
+    "list_custom_01" :[
+        {"id":1 , "txt":  "CUSTOM_ITEM_01", "page":"customs"},
+        {"id":2 , "txt":  "CUSTOM_ITEM_02", "page":"customs"},
+        {"id":3 , "txt":  "CUSTOM_ITEM_03", "page":"customs"},
+        {"id":4 , "txt":  "CUSTOM_ITEM_04", "page":"customs"},
+        {"id":5 , "txt":  "CUSTOM_ITEM_05", "page":"customs"},
+        {"id":6 , "txt":  "CUSTOM_ITEM_06", "page":"customs"},
+        {"id":7 , "txt":  "CUSTOM_ITEM_07", "page":"customs"},
+        {"id":8 , "txt":  "CUSTOM_ITEM_08", "page":"customs"},
+        {"id":9 , "txt":  "CUSTOM_ITEM_09", "page":"customs"},
+        {"id":10, "txt":  "CUSTOM_ITEM_10", "page":"customs"},
+        {"id":11, "txt":  "CUSTOM_ITEM_11", "page":"customs"}
+    ]
+}

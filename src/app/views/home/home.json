@@ -1,0 +1,35 @@
+{
+    "slides" : [
+        {"src":"../assets/images/pages/ps_item_1.jpg"},
+        {"src":"../assets/images/pages/ps_item_2.jpg"},
+        {"src":"../assets/images/pages/ps_item_3.jpg"},
+        {"src":"../assets/images/pages/ps_item_4.jpg"}
+      ],
+    "title"  : "ABOUT",
+    "pa_01"  : "PA_01",
+    "pa_02"  : "PA_02",
+    "pa_03"  : "PA_03",
+    "pa_04"  : "PA_04",
+    "pa_05"  : "PA_05",
+    "pa_06"  : "PA_06",
+    "pa_07"  : "PA_07",
+    "pa_08"  : "PA_08",
+    "pa_081" : "PA_081",
+    "pa_082" : "PA_082",
+    "pa_09"  : "PA_09",
+    "list01" :[
+        {"id":1 , "txt":  "PA_ITEM_01", "page":"home"},
+        {"id":2 , "txt":  "PA_ITEM_02", "page":"home"},
+        {"id":3 , "txt":  "PA_ITEM_03", "page":"home"},
+        {"id":4 , "txt":  "PA_ITEM_04", "page":"home"},
+        {"id":5 , "txt":  "PA_ITEM_05", "page":"home"},
+        {"id":6 , "txt":  "PA_ITEM_06", "page":"home"},
+        {"id":7 , "txt":  "PA_ITEM_07", "page":"home"},
+        {"id":8 , "txt":  "PA_ITEM_08", "page":"home"},
+        {"id":9 , "txt":  "PA_ITEM_09", "page":"home"},
+        {"id":10, "txt":  "PA_ITEM_10", "page":"home"},
+        {"id":11, "txt":  "PA_ITEM_11", "page":"home"},
+        {"id":12, "txt":  "PA_ITEM_12", "page":"home"},
+        {"id":13, "txt":  "PA_ITEM_13", "page":"home"}
+    ]
+}

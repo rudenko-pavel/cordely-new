@@ -1,0 +1,34 @@
+<div ng-if="railway.promise.$$state.status != 1">
+  <pre-loader></pre-loader>
+</div>
+
+<div ng-if="railway.promise.$$state.status == 1">
+  <div class="topImg">
+    <img src="assets/images/bg/bg_04.jpg" />
+  </div>
+  
+  <!--==========================
+    railway Section
+  ============================-->
+  <section id="railway">
+    <div class="railway-row section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">{{railway.railway_01 | translate}}</h2>
+          <span class="section-divider"></span>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-6">
+            <div class="wow fadeInLeft">
+              <p>{{railway.railway_02 | translate}}</p>
+              <p>{{railway.railway_021 | translate}}</p>
+             </div>
+          </div>
+          <div class="col-6 col-md-6">
+              <img class="railway-img-right wow fadeInRight" src="../assets/images/img/railway-11.jpg" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

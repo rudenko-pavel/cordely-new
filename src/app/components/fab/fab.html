@@ -1,0 +1,18 @@
+<div ng-cloak class="fab-div">
+  <md-fab-speed-dial md-open="fab.isOpen" md-direction="{{fab.selectedDirection}}"
+                      ng-class="{{fab.selectedMode}}"
+                      class="ng-isolate-scope md-fling _md-animations-ready md-down md-is-open">
+    <md-fab-trigger>
+      <md-button  class="md-fab md-warn md-button md-ink-ripple" type="button" aria-label="menu"
+                  ng-class="fab.currentLanguage()" ng-click="fab.isVisibleFabFunc()">
+        <div class="md-ripple-container" style=""></div>
+      </md-button>
+    </md-fab-trigger>
+    <md-fab-actions class = "md-fab-actions" ng-show="fab.isVisibleFab">
+      <div ng-repeat="item in fab.languages" ng-click="fab.changeLanguage(item.value)">
+        <md-button aria-label="{{item.name}}" ng-class="item.value" class="md-fab md-raised md-mini">
+        </md-button>
+      </div>
+    </md-fab-actions>
+</md-fab-speed-dial>
+</div>

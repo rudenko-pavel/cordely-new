@@ -1,0 +1,29 @@
+<div class="container-fluid info-box">
+  <div ng-if="privateclients.promise.$$state.status != 1">
+    <pre-loader></pre-loader>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 "  ng-if="privateclients.promise.$$state.status == 1">
+    <div class="caption">
+      <section class="section-bg topPart"  ng-mouseover="privateclients.topAnimate=2" ng-mouseleave="privateclients.topAnimate=1">
+        <div class="capt parallax-bg parallax-primary">
+          <h2 class="animated " ng-class="privateclients.topAnimate==1 ? 'lightSpeedIn':''" >{{privateclients.title | translate}}<div class="decor-2"></div></h2>
+          <ul class="bg-slideshow">
+              <li>
+                  <div id="privateclientsImg01" class="bg-slide"></div>
+              </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="commomText">
+        <div class="pImg">
+          <p><img src="../assets/images/pages/pa_01.jpg" class="rightImg" ng-click="tog_01=1" />{{privateclients.private_01 | translate}}</p>
+          <div class="bigImg" ng-class='{"bigImgView":tog_01==1}' ng-click="tog_01=0">
+              <img src="../assets/images/pages/pa_01.jpg" />
+              <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
