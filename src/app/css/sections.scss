@@ -1,7 +1,6 @@
 /* Sections Header
 --------------------------------*/
 .section-header .section-title {
-    font-size: 32px;
     color: #111;
     text-align: center;
     font-weight: 400;
@@ -28,6 +27,7 @@
   --------------------------------*/
   .section-bg {
     background: #eff5f5;
+    height: auto !important;
   }
 
 
@@ -44,21 +44,21 @@
     }
 
     h2 {
-      font-size: 26px;
+      font-size: 1.9em;
       font-weight: 700;
       color: #000;
     }
 
     h3 {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1.7em;
+        line-height: 1.6em;
         font-weight: 400;
         font-style: italic;
         color: #999;
     }
 
     p {
-        line-height: 24px;
+        line-height: 1.6em;
         color: #777;
         margin-bottom: 30px;
     }
@@ -118,23 +118,32 @@
             color:#333
         }
 
-        h4 {
+        .wrapper-text{
+            overflow: hidden;
+            height: 12em;
             margin-left: 100px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            font-size: 18px;
-      
-            a {
-                  color: #111;
+
+            h4 {
+
+                font-weight: 700;
+                margin-bottom: 15px;
+                font-size: 1.4em;
+          
+                a {
+                      color: #111;
+                }
+            }
+          
+            p{
+                font-size: 1.0em;
+                margin-bottom: 0;
+                line-height: 1.5em;
             }
         }
-      
-        p{
-            font-size: 14px;
-            margin-left: 100px;
-            margin-bottom: 0;
-            line-height: 24px;
+        .bottom-text{
+            padding-bottom: 2em;
         }
+
     }
 
     .wow.fadeInUp{
@@ -170,7 +179,9 @@
           }
       }
 
-
+    .inImg{
+        text-align: center;
+    }
 
     .names-box{
         border: 0px solid red
@@ -191,17 +202,32 @@
 
   }
 
-  
-  @media (max-width: 768px) {
-    .chapter .chapter-img-right, .chapter .chapter-img-left {
-      max-width: 50%;
+// Small devices (landscape phones, 576px and up)
+@media only screen and  (max-device-width: 575px) { 
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media only screen and  (max-device-width: 767px) {
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media only screen and  (max-device-width: 991px) {
+    .container {
+        max-width: 100%;
     }
-  }
-  
-  @media (max-width: 767px) {
-    .chapter .chapter-img-right, .chapter .chapter-img-left {
-      max-width: 100%;
-      float: none;
-      padding: 0 0 30px 0;
+
+    .chapter h2 {
+        font-size: 1.6em;
     }
-  }
+    .chapter h3 {
+        font-size: 1.2em;
+    }
+
+    .chapter .chapter-img-right, .chapter .chapter-img-left {
+        max-width: 70%;
+        float: none;
+        padding: 0 0 30px 0;
+      }   
+}

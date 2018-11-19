@@ -1,12 +1,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
-  background: #fff;
-  color: #666666;
-  font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
-}
+
 
 a {
   color: #1dc8cd;
@@ -311,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Nav Meu Container */
 #nav-menu-container {
   float: right;
-  margin: 0;
+  margin: 0 50px 0 0;
 }
 
 @media (max-width: 768px) {
@@ -373,13 +368,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Nav Toggle */
 #mobile-nav-toggle {
   position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 999;
-  margin: 20px 20px 0 0;
+  top: 8px;
+  right: 70px;
+  z-index: 9999;
+  margin: 0px;
   border: 0;
   background: none;
-  font-size: 24px;
+  font-size: 2em;
   display: none;
   transition: all 0.4s;
   outline: none;
