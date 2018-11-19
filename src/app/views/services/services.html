@@ -1,46 +1,32 @@
-<div class="container-fluid info-box">
-  <div ng-if="services.promise.$$state.status != 1">
-    <pre-loader></pre-loader>
+<div ng-if="services.promise.$$state.status != 1">
+  <pre-loader></pre-loader>
+</div>
+<div  ng-if="services.promise.$$state.status == 1">
+  <div class="topImg">
+    <img src="assets/images/bg/bg_09.jpg" />
   </div>
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 " ng-if="services.promise.$$state.status == 1">
-    <div class="caption">
-      <section class="section-bg topPart"  ng-mouseover="services.topAnimate=2" ng-mouseleave="services.topAnimate=1">
-        <div class="capt parallax-bg parallax-primary">
-          <h2 class="animated " ng-class="services.topAnimate==1 ? 'lightSpeedIn':''" >{{services.title | translate}}<div class="decor-2"></div></h2>
-          <ul class="bg-slideshow">
-              <li>
-                  <div id="servicesImg01" class="bg-slide"></div>
-              </li>
-          </ul>
-        </div>
-      </section>
-      <div class="decor-1">
-          <span>{{services.title | translate}}</span>
+  
+  <!--==========================
+    services Section
+  ============================-->
+  <section id="services" class="section-bg">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-title">{{services.title | translate}}</h3>
+        <span class="section-divider"></span>
       </div>
-      
-      <div class="commomText">
-        <div class="pImg">
-          <div class="container-fluid">
-            <div class="row row-flex">
-              <div ng-repeat="item in services.list02" class="col-xs-12 col-sm-6 col-md-4 col-lg-4 pad0 ">
-                <div class="wrapperBlock" ng-click="services.goTo(item.link)">
-                  <div class="block-services">
-                    <div class="bgOpacity">
-                      <h5 class="block-services__title ui-title-inner">{{item.name | translate}}</h5>
-                      <div class="block-services__description">{{item.description | translate}}</div>
-
-                      <div class="decor-3"></div>
-                      <a class="block-services__link btn-link" href="{{item.link}}">{{services.read | translate}}</a>
-                    </div>
-                    <div class="img-overlay"></div>
-                  </div>
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-lg-6 names-box" ng-repeat="item in services.list02">
+          <div class="box wow" ng-class="{'fadeInLeft':$index%2==0,'fadeInRight': $index%2!=0}">
+            <div class="icon"><img ng-src="assets/images/pages/services/{{item.id}}.jpg" /></div>
+            <h4 class="title"><a  ng-href="{{item.link}}">{{item.name | translate}}</a></h4>
+            <p class="description">{{item.description | translate}}</p>
+            <div clas="bottom-text">
+                <a class="description" href="{{item.link}}">{{services.read | translate}}</a>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
+  </section><!-- #services -->
 </div>

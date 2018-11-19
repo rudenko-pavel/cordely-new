@@ -1,44 +1,54 @@
-<div class="container-fluid info-box">
+
   <div ng-if="customs.promise.$$state.status != 1">
     <pre-loader></pre-loader>
   </div>
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 "  ng-if="customs.promise.$$state.status == 1">
-    <div class="caption">
-      <section class="section-bg topPart"  ng-mouseover="customs.topAnimate=2" ng-mouseleave="customs.topAnimate=1">
-        <div class="capt parallax-bg parallax-primary">
-          <h2 class="animated " ng-class="customs.topAnimate==1 ? 'lightSpeedIn':''" >{{customs.title | translate}}<div class="decor-2"></div></h2>
-          <ul class="bg-slideshow">
-              <li>
-                  <div id="customsImg01" class="bg-slide"></div>
-              </li>
-          </ul>
-        </div>
-      </section>
+  <div  ng-if="customs.promise.$$state.status == 1">
+    <div class="topImg">
+      <img src="assets/images/bg/bg_10.jpg" />
+    </div>
+    
+    <!--==========================
+      customs Section
+    ============================-->
+    <section id="customs">
 
-      <div class="commomText">
-        <div class="pImg">
-          <p><img src="../assets/images/pages/pa_01.jpg" class="rightImg" ng-click="tog_01=1" />
-            <p>{{customs.custom_01 | translate}}</p>
-            <p>{{customs.custom_02 | translate}}</p>
-            <p>{{customs.custom_03 | translate}}</p>
-          </p>
-          <div class="bigImg" ng-class='{"bigImgView":tog_01==1}' ng-click="tog_01=0">
-            <img src="../assets/images/pages/pa_01.jpg" />
-            <div></div>
+      <div class="customs-row section-bg">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">{{customs.title | translate}}</h2>
+            <span class="section-divider"></span>
           </div>
-          <table class="table table-hover commonUl">
-            <tbody>
-              <tr ng-repeat="item in customs.list_custom_01">
-                <td>
-                  <span class="decor-2"></span>
-                  <span>{{item.txt | translate}}</span>     
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="row">
+            <div class="col-6 col-md-6">
+              <div class="wow fadeInLeft">
+                <p>{{customs.custom_01 | translate}}</p>
+                <p>{{customs.custom_02 | translate}}</p>
+               </div>
+            </div>
+            <div class="col-6 col-md-6">
+                <img class="customs-img-right wow fadeInRight" src="../assets/images/img/customs-11.jpg" alt="">
+              </div>
+          </div>
         </div>
       </div>
 
-    </div>
+      <div class="customs-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-6">
+              <img class="customs-img-left  wow fadeInLeft" src="../assets/images/img/customs-12.jpg" alt="">
+            </div>
+            <div class="col-6 col-md-6 content">
+              <div class="wow fadeInRight">
+                <h3>{{customs.custom_03 | translate}}</h3>
+                <ul>
+                  <li ng-repeat="item in customs.list_custom_01"><i class="ion-android-checkmark-circle"></i>{{item.txt | translate}}</li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- #customs -->
   </div>
-</div>

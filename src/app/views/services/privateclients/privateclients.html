@@ -1,29 +1,34 @@
-<div class="container-fluid info-box">
-  <div ng-if="privateclients.promise.$$state.status != 1">
-    <pre-loader></pre-loader>
-  </div>
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 "  ng-if="privateclients.promise.$$state.status == 1">
-    <div class="caption">
-      <section class="section-bg topPart"  ng-mouseover="privateclients.topAnimate=2" ng-mouseleave="privateclients.topAnimate=1">
-        <div class="capt parallax-bg parallax-primary">
-          <h2 class="animated " ng-class="privateclients.topAnimate==1 ? 'lightSpeedIn':''" >{{privateclients.title | translate}}<div class="decor-2"></div></h2>
-          <ul class="bg-slideshow">
-              <li>
-                  <div id="privateclientsImg01" class="bg-slide"></div>
-              </li>
-          </ul>
-        </div>
-      </section>
-
-      <div class="commomText">
-        <div class="pImg">
-          <p><img src="../assets/images/pages/pa_01.jpg" class="rightImg" ng-click="tog_01=1" />{{privateclients.private_01 | translate}}</p>
-          <div class="bigImg" ng-class='{"bigImgView":tog_01==1}' ng-click="tog_01=0">
-              <img src="../assets/images/pages/pa_01.jpg" />
-              <div></div>
+<div ng-if="privateclients.promise.$$state.status != 1">
+      <pre-loader></pre-loader>
+    </div>
+    <div  ng-if="privateclients.promise.$$state.status == 1">
+      <div class="topImg">
+        <img src="assets/images/bg/bg_14.jpg" />
+      </div>
+      
+      <!--==========================
+        privateclients Section
+      ============================-->
+      <section id="privateclients">
+  
+        <div class="privateclients-row section-bg">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">{{privateclients.title | translate}}</h2>
+              <span class="section-divider"></span>
+            </div>
+            <div class="row">
+              <div class="col-6 col-md-6">
+                <div class="wow fadeInLeft">
+                  <p>{{privateclients.private_01 | translate}}</p>
+                 </div>
+              </div>
+              <div class="col-6 col-md-6">
+                  <img class="privateclients-img-right wow fadeInRight" src="../assets/images/img/privateclients-11.jpg" alt="">
+                </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section><!-- #privateclients -->
     </div>
-  </div>
-</div>
+  
