@@ -9,20 +9,22 @@
   <!--==========================
     services Section
   ============================-->
-  <section id="services" class="section-bg">
-    <div class="container">
-      <div class="section-header">
-        <h3 class="section-title">{{services.title | translate}}</h3>
-        <span class="section-divider"></span>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 names-box" ng-repeat="item in services.list02">
-          <div class="box wow" ng-class="{'fadeInLeft':$index%2==0,'fadeInRight': $index%2!=0}">
-            <div class="icon"><img ng-src="assets/images/pages/services/{{item.id}}.jpg" /></div>
-            <h4 class="title"><a  ng-href="{{item.link}}">{{item.name | translate}}</a></h4>
-            <p class="description">{{item.description | translate}}</p>
-            <div clas="bottom-text">
-                <a class="description" href="{{item.link}}">{{services.read | translate}}</a>
+  <section id="services" class="chapter">
+    <div class="chapter-row section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">{{services.title | translate}}</h3>
+          <span class="section-divider"></span>
+        </div>
+        <div class="chapter-row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 names-box" ng-repeat="item in services.list02">
+            <div class="box wow" ng-class="{'fadeInLeft':$index%2==0,'fadeInRight': $index%2!=0}">
+              <div class="icon"><img ng-src="assets/images/pages/services/{{item.id}}.jpg" /></div>
+              <h4 class="title"><a  ng-href="{{item.link}}">{{item.name | translate}}</a></h4>
+              <p class="description">{{item.description | translate}}</p>
+              <div clas="bottom-text">
+                  <a class="description" href="{{item.link}}">{{services.read | translate}}</a>
+              </div>
             </div>
           </div>
         </div>

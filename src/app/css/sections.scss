@@ -1,0 +1,207 @@
+/* Sections Header
+--------------------------------*/
+.section-header .section-title {
+    font-size: 32px;
+    color: #111;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .section-header .section-description {
+    text-align: center;
+    padding-bottom: 40px;
+    color: #777;
+    font-style: italic;
+  }
+  
+  .section-header .section-divider {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #1dc8cd;
+    background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Section with background
+  --------------------------------*/
+  .section-bg {
+    background: #eff5f5;
+  }
+
+
+/* chapter Section
+#home-about, 
+#carriages, #auto, #railway, #air, #sea, #multimodal, #sectional
+#services, #customs, #consultations, #logistics, #doortodoor, #privateclients
+--------------------------------*/
+.chapter {
+    overflow: hidden; 
+    
+    .chapter-row {
+        padding: 60px 0 30px 0;
+    }
+
+    h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #000;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: italic;
+        color: #999;
+    }
+
+    p {
+        line-height: 24px;
+        color: #777;
+        margin-bottom: 30px;
+    }
+
+    i {
+        color: #666666;
+        font-size: 64px;
+        transition: 0.5s;
+        float: left;
+        padding: 0 15px 0px 0;
+        line-height: 1;
+
+        :before {
+            background: #1dc8cd;
+            background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .chapter-img-right {
+        max-width: 100%;
+        float: right;
+        padding: 0 0 30px 30px;
+    }
+
+    .chapter-img-left {
+        max-width: 100%;
+        float: left;
+        padding: 0 30px 30px 0;
+    }
+
+    .content i {
+        font-size: 20px;
+        padding-right: 4px;
+        color: #1dc8cd;
+    }
+
+    .content ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            padding-bottom: 10px;
+          }
+    }
+
+    .wow{
+
+        h2{
+            text-align: center;
+        }
+
+        h3{
+            font-weight: 700;
+            color:#333
+        }
+
+        h4 {
+            margin-left: 100px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 18px;
+      
+            a {
+                  color: #111;
+            }
+        }
+      
+        p{
+            font-size: 14px;
+            margin-left: 100px;
+            margin-bottom: 0;
+            line-height: 24px;
+        }
+    }
+
+    .wow.fadeInUp{
+        padding: 50px 0;
+    }
+
+    .box {
+        padding: 40px 40px 0 40px;
+        margin-bottom: 30px;
+        box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+        background: #fff;
+        transition: 0.4s;
+      }
+
+      .icon {
+        float: left;
+        width: 30%;
+        padding: 5px;
+
+        i {
+            color: #666666;
+            font-size: 80px;
+            transition: 0.5s;
+            line-height: 0;
+
+            :before {
+                background: #1dc8cd;
+                background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+          }
+      }
+
+
+
+    .names-box{
+        border: 0px solid red
+    }
+    
+    .names-box > div{
+        height: 90%;
+    
+        p{
+            height: 9em;
+            overflow: hidden;
+        }
+        .icon img{
+            width:100%;
+            border-radius: 50%;
+        }
+    }
+
+  }
+
+  
+  @media (max-width: 768px) {
+    .chapter .chapter-img-right, .chapter .chapter-img-left {
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .chapter .chapter-img-right, .chapter .chapter-img-left {
+      max-width: 100%;
+      float: none;
+      padding: 0 0 30px 0;
+    }
+  }
