@@ -1,57 +1,67 @@
-<div class="container-fluid info-box">
-    <div  ng-if="contacts.promise.$$state.status != 1">
-        <pre-loader></pre-loader>
+<div ng-if="contacts.promise.$$state.status != 1">
+    <pre-loader></pre-loader>
+</div>
+<div  ng-if="contacts.promise.$$state.status == 1">
+    <div class="topImg">
+        <img src="assets/images/bg/bg_15.jpg" />
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 "  ng-if="contacts.promise.$$state.status == 1">
-        <div class="caption">
-            <section class="section-bg topPart"  ng-mouseover="contacts.topAnimate=2" ng-mouseleave="contacts.topAnimate=1">
-                <div class="capt parallax-bg parallax-primary">
-                    <h2 class="animated " ng-class="contacts.topAnimate==1 ? 'lightSpeedIn':''" >{{contacts.title | translate}}<div class="decor-2"></div></h2>
-                    <ul class="bg-slideshow">
-                        <li>
-                            <div id="contactsImg01" class="bg-slide"></div>
-                        </li>
-                    </ul>
+    <!--==========================
+    contacts Section
+    ============================-->
+    <section id="contacts" class="chapter">
+
+        <div class="chapter-row section-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">{{contacts.pc_01 | translate}}</h2>
+                    <span class="section-divider"></span>
                 </div>
-            </section>
-    
-            <div class="decor-1">
-              <span>{{contacts.pc_01 | translate}}</span>
-            </div>
-            <div class="commomText">
-                <div class="pImg">
-                    <h4>{{contacts.pc_02 | translate}}</h4>
-                    <div class="container commonUl">
-                        <div class="row  row-flex">
-                            <div class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
-                                <i class="material-icons middle">&#xE0B0;</i>
-                            </div>
-                            <div class="col-xs-9 col-sm-10 col-md-10 col-lg-10">
-                                <h5 class="goldTxt">+7(499) 270-05-30</h5>
-                                <span>{{contacts.pc_03 | translate}}</span>
-                            </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 inImg">
+                        <img class="chapter-img-left  wow fadeInLeft" src="../assets/images/img/contacts-11.jpg" alt="">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 content">
+                        <div class="wow fadeInRight">
+                            <ul>
+                                <p>{{contacts.pc_02 | translate}}</p>
+                            </ul>
                         </div>
-                        <div class="row  row-flex">
-                            <div class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
-                                <i class="material-icons middle">&#xE0E1;</i>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 content">
+                        <div class="wow fadeInUp">
+                            <div class="info">
+                              <div>
+                                <i class="ion-ios-location-outline"></i>
+                                <p>???????? ????? ? ????????</p>
+                              </div>
+                          
+                              <div>
+                                <i class="ion-ios-email-outline"></i>
+                                <p>info@example.com <span class="add-info">{{contacts.pc_04   | translate}}</span></p>
+
+                              </div>
+                          
+                              <div>
+                                <i class="ion-ios-telephone-outline"></i>
+                                <p>+7(499) 270-05-30</p>
+                              </div>
+                          
                             </div>
-                            <div class="col-xs-9 col-sm-10 col-md-10 col-lg-10">
-                                <h5><a  href="mailto:inquiry@domain.com" class="goldTxt">inquiry@domain.com</a></h5>
-                                <span>{{contacts.pc_04   | translate}}</span>
-                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 content">
+                        <div class="wow fadeInUp">
+                            <h3>{{contacts.pc_05 | translate}}</h3>
+                            <send-email></send-email>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="decor-1">
-                <span>{{contacts.pc_05 | translate}}</span>
-            </div>
-            <div class="commomText">
-                <div class="pImg">
-                    <send-email></send-email>
-                </div>
-            </div>
         </div>
-    </div>
+    </section><!-- #contacts -->
 </div>
+
   

@@ -1,7 +1,18 @@
-#contactsImg01{
-    background-image:url("../assets/images/bg/bg_04.jpg");
+.add-info{
+    padding: 5px 0 30px 30px;
+
 }
 
-#contactsImg02{
-    background-image:url("../assets/images/bg/bg_05.jpg");
+#contacts .wow h3{
+    text-align: center;
+}
+
+#contacts .wow .btn{
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    border: 0;
+    border-radius: 20px;
+}
+
+#contacts .md-button:not([disabled]):hover  {
+    background-color: #5bc0de !important;
 }

@@ -21,6 +21,7 @@
     function NavbarController($http, $location) {
       var vm = this;
       vm.isMobileShow     = false;
+      vm.menuButton       ="fa-bars";
 
       $http.get('assets/data.json').success(function(data) {
         vm.remoteData           = data;
@@ -30,17 +31,24 @@
 
     // FUNCTION DESCRIPTION
     vm.goTo                    = goTo;                           // check $location(path)
-    vm.mobileMenu              = mobileMenu;
+    vm.showMobile              = showMobile;
 
-  // IMPLEMENTATION
-    function goTo(page) {
-      vm.isMobileShow==true? vm.isMobileShow=false:'';
-      $location.path(page);
-    }
+    // IMPLEMENTATION
+      function goTo(page) {
+        vm.isMobileShow==true? vm.isMobileShow=false:'';
+        $location.path(page);
+      }
 
-    function mobileMenu(){
-      vm.isMobileShow = !vm.isMobileShow;
-    }
+
+      function showMobile(){
+        console.log("showMobile()");
+        var myEl = angular.element(document.querySelector('#body'));
+        myEl.toggleClass('mobile-nav-active');
+
+        vm.isMobileShow = !vm.isMobileShow;
+        vm.menuButton == "fa-bars" ? vm.menuButton = "fa-times": vm.menuButton = "fa-bars";
+        
+      }
 
     }
   }

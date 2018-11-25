@@ -7,7 +7,7 @@
         <li ng-repeat="item in navbar.itemsInTopMenu" class="dropdownMenu"
           ng-show="item.isView == true"
           ng-class='{"menu-has-children":item.cid == true}'>
-          <a  ui-sref-active="active" ng-click="navbar.mobileMenu()" 
+          <a  ui-sref-active="active"  
               ng-mouseover="tog=item.id"  ng-mouseleave="tog=0" ng-click="tog=0"
               ui-sref="{{item.uisref}}">{{item.name| translate |uppercase}}
             <span class="caret" ng-show="item.cid == true"></span>  
@@ -18,12 +18,39 @@
                 ng-class='{"over":tog==item.id}' >
             <li ng-repeat="itemDrop in navbar.itemsDropdownMenu | filter :{pid : item.id}">
               <a  ui-sref-active="active dropdown" 
-                ui-sref="{{itemDrop.uisref}}" ng-click="navbar.mobileMenu()">
+                ui-sref="{{itemDrop.uisref}}">
               {{itemDrop.name| translate |uppercase}}</a>
             </li>
           </ul>
         </li>
       </ul>
     </nav><!-- #nav-menu-container -->    
+    <button type="button" id="mobile-nav-toggle" ng-click="navbar.showMobile()"><i class="fa" ng-class="navbar.menuButton"></i></button>
+
+
+    <nav id="mobile-nav">
+        <ul class="" style="touch-action: pan-y;">
+            <li ng-repeat="item in navbar.itemsInTopMenu" class="dropdownMenu"
+              ng-show="item.isView == true"
+              ng-class='{"menu-has-children":item.cid == true}'>
+              <a  ui-sref-active="active" ng-click="navbar.showMobile()" 
+                  ng-mouseover="tog=item.id"  ng-mouseleave="tog=0" ng-click="tog=0"
+                  ui-sref="{{item.uisref}}">{{item.name| translate |uppercase}}
+                <span class="caret" ng-show="item.cid == true"></span>  
+              </a>
+              <ul ng-show="item.cid == true" 
+                    ng-mouseover="tog=item.id"
+                    ng-mouseleave="tog=0" ng-click="tog=0"
+                    ng-class='{"over":tog==item.id}' >
+                <li ng-repeat="itemDrop in navbar.itemsDropdownMenu | filter :{pid : item.id}">
+                  <a  ui-sref-active="active dropdown" 
+                    ui-sref="{{itemDrop.uisref}}" ng-click="navbar.showMobile()">
+                  {{itemDrop.name| translate |uppercase}}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+      </nav>
+      <div id="mobile-body-overly" class="mobile-body-overly" ng-show="navbar.isMobileShow"></div>
   </div>
 </header><!-- #header -->
