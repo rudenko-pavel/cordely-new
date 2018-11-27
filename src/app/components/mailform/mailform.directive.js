@@ -18,7 +18,7 @@
         return directive;
     
         /** @ngInject */
-        function SendEmailController($scope,$log) {
+        function SendEmailController($scope,$log,$http) {
             var vm = this;
             vm.info = {};
             
